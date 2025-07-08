@@ -23,15 +23,28 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" >
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <div>
+        <div className="top-bar">
           <Link href={"/"}>home</Link>
           <Link href={"/page1"}>page1</Link>
           <Link href={"/page2"}>page2</Link>
           <Link href={"/table"}>table</Link>
         </div>
-        <div>{children}</div>
+        <div style={{
+          padding: "4em",
+
+        }}>
+          <p style={{
+            fontSize: '20px',
+            marginBottom: '2em',
+          }}>Navigate Between the pages, home then page 1 then page 2 (good so far) - then go to table and back to page 2 (will be slow - very.. slow)</p>
+
+          <div>
+            
+          {children}
+          </div>
+          </div>
       </body>
     </html>
   );

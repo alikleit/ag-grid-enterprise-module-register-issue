@@ -146,6 +146,8 @@ ModuleRegistry.registerModules([
   ColumnAutoSizeModule,
   RowSelectionModule,
   ClientSideRowModelModule,
+
+  // !! COMMENT THIS OUT TO SEE THE DIFFERENCE !!
   ColumnsToolPanelModule,
   MenuModule,
   RowGroupingModule,
